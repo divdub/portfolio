@@ -47,8 +47,8 @@ const ContactCta = () => {
                   Let&apos;s Work Together
                 </h2>
                 <p className="mt-3 max-w-lg text-text-muted">
-                  Have a project in mind or just want to say hi? I&apos;m always open to
-                  discussing new opportunities and interesting ideas.
+                  Have an internship or entry-level opportunity in backend or full-stack development?
+                  I&apos;m always open to discussing impactful work and learning with strong teams.
                 </p>
               </div>
 
@@ -62,10 +62,10 @@ const ContactCta = () => {
                   <ArrowRight size={16} className="transition-transform duration-200 group-hover:translate-x-1" />
                 </Link>
                 <Link
-                  href="mailto:rahullade935@gmail.com"
+                  href="mailto:divyanshdubey1108@gmail.com"
                   className="text-sm text-text-muted transition-colors duration-200 hover:text-violet"
                 >
-                  rahullade935@gmail.com
+                  divyanshdubey1108@gmail.com
                 </Link>
               </div>
             </div>

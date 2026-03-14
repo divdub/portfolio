@@ -41,8 +41,8 @@ const PageClient = () => {
               All Projects
             </h1>
             <p className="mt-3 max-w-2xl text-text-muted">
-              A collection of projects I&apos;ve built, ranging from full-stack
-              applications to AI-powered tools and creative frontends.
+              A complete list of my GitHub projects, spanning full-stack web apps,
+              backend experiments, AI-integrated builds, and core programming practice.
             </p>
           </motion.div>
           
@@ -54,7 +54,7 @@ const PageClient = () => {
           >
             <FloatingCrystal />
             {/* Gradient overlay for blending */}
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent lg:bg-gradient-to-l" />
+            <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent lg:bg-linear-to-l" />
           </motion.div>
         </div>
 

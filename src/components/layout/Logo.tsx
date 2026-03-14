@@ -26,12 +26,12 @@ const Logo = ({ size = 'md' }: ILogoProps) => {
           className={`${textSize} relative font-serif font-bold tracking-wide text-violet transition-colors duration-200`}
           style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}
         >
-          rahul
+          dubeydiv
         </span>
         <span
           className={`${subSize} relative font-semibold tracking-[0.35em] text-violet/70 uppercase transition-colors duration-200`}
         >
-          NOT TODAY
+          FULL STACK
         </span>
       </motion.div>
     </Link>

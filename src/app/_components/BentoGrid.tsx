@@ -42,16 +42,16 @@ interface IStatBadge {
 }
 
 const STATS: IStatBadge[] = [
-  { icon: Code2, label: 'Role', value: 'Full-Stack Developer' },
-  { icon: MapPin, label: 'Based in', value: 'India 🇮🇳' },
-  { icon: Briefcase, label: 'Experience', value: '3+ Years' },
+  { icon: Code2, label: 'Role', value: 'Full-Stack Developer (Backend Focus)' },
+  { icon: MapPin, label: 'Based in', value: 'Raipur, Chhattisgarh' },
+  { icon: Briefcase, label: 'Profile', value: 'Fresher | 600+ DSA Problems' },
 ];
 
 /* ── Summary paragraphs (placeholder — user fills in later) ── */
 const SUMMARY_PARAGRAPHS = [
-  'Passionate full-stack developer with 3+ years of experience building scalable, high-performance web applications. I specialize in React, Next.js, and Node.js ecosystems, delivering end-to-end solutions that are both technically robust and visually refined.',
-  'I believe in clean code, thoughtful architecture, and user-first design. Every project I take on is driven by a commitment to craft — from pixel-perfect interfaces to well-structured APIs. I thrive in fast-paced environments where attention to detail and creative problem-solving make all the difference.',
-  'Currently open to remote opportunities worldwide. Whether it\'s a startup MVP or an enterprise-grade platform, I bring the same level of dedication and quality to every build.',
+  'Backend-oriented full stack developer with strong fundamentals in systems thinking and problem solving. I build practical products with Next.js, React, Node.js, and modern API-first workflows.',
+  'I enjoy designing clean backend architecture, building reliable REST APIs, and connecting them to responsive frontend experiences. My projects focus on usability, maintainability, and real-world impact.',
+  'I am currently seeking internship and entry-level software engineering opportunities where I can contribute, learn from strong teams, and keep scaling my engineering depth.',
 ];
 
 /* ── Tech stack rows with icons ── */
@@ -123,7 +123,7 @@ const BentoGrid = () => {
             <div className="relative aspect-square w-full max-w-sm">
               <GlobeScene className="h-full w-full" />
               {/* Subtle gradient overlay at bottom for blending */}
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-background to-transparent" />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-linear-to-t from-background to-transparent" />
             </div>
           </motion.div>
 
@@ -197,9 +197,9 @@ const BentoGrid = () => {
           </h3>
           <div className="relative flex flex-col gap-5">
             {/* Left-fading edge mask */}
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r from-background to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-linear-to-r from-background to-transparent" />
             {/* Right-fading edge mask */}
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-gradient-to-l from-background to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-linear-to-l from-background to-transparent" />
 
             {/* Row 1 — scrolls left */}
             <TechMarquee items={TECH_ROW_1} direction="left" speed={30} />

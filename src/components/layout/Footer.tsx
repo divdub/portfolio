@@ -3,10 +3,10 @@ import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import Link from 'next/link';
 
 const SOCIAL_LINKS = [
-  { href: 'https://github.com', icon: Github, label: 'GitHub' },
-  { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
-  { href: 'https://x.com', icon: Twitter, label: 'X (Twitter)' },
-  { href: 'mailto:rahullade935@gmail.com', icon: Mail, label: 'Email' },
+  { href: 'https://github.com/divdub', icon: Github, label: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/dubeydiv/', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'https://x.com/dubeydiv697', icon: Twitter, label: 'X (Twitter)' },
+  { href: 'mailto:divyanshdubey1108@gmail.com', icon: Mail, label: 'Email' },
 ] as const;
 
 const Footer = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
         {/* Left — Branding */}
         <div className="flex items-center gap-3">
           <span className="text-sm text-text-muted">
-            © {currentYear} Rahul Lade. All rights reserved.
+            © {currentYear} Divyansh Dubey. All rights reserved.
           </span>
         </div>
 

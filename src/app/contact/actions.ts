@@ -31,7 +31,7 @@ const sendContactEmail = async (data: IContactFormData): Promise<IActionResult> 
 
         await transporter.sendMail({
             from: process.env.GMAIL_USER,
-            to: 'rahullade935@gmail.com',
+            to: 'divyanshdubey1108@gmail.com',
             replyTo: email,
             subject: `Portfolio Contact from ${name}`,
             text: `Name: ${name}\nEmail: ${email}\nMessage:\n${message}`,
@@ -52,4 +52,3 @@ const sendContactEmail = async (data: IContactFormData): Promise<IActionResult> 
 };
 
 export { sendContactEmail };
-export type { IContactFormData, IActionResult };

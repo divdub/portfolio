@@ -8,10 +8,10 @@ import Link from 'next/link';
 import { sendContactEmail } from '../actions';
 
 const SOCIAL_LINKS = [
-  { href: 'https://github.com', icon: Github, label: 'GitHub' },
-  { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
-  { href: 'https://x.com', icon: Twitter, label: 'X (Twitter)' },
-  { href: 'mailto:rahullade935@gmail.com', icon: Mail, label: 'Email' },
+  { href: 'https://github.com/divdub', icon: Github, label: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/dubeydiv/', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'https://x.com/dubeydiv697', icon: Twitter, label: 'X (Twitter)' },
+  { href: 'mailto:divyanshdubey1108@gmail.com', icon: Mail, label: 'Email' },
 ] as const;
 
 const PageClient = () => {
@@ -55,8 +55,8 @@ const PageClient = () => {
             Get in Touch
           </h1>
           <p className="mt-3 max-w-2xl text-text-muted">
-            Have a project in mind or want to collaborate? Send me a message
-            and I&apos;ll get back to you as soon as possible.
+            Looking for an intern or entry-level engineer for backend or full-stack roles?
+            Send me a message and I&apos;ll get back to you as soon as possible.
           </p>
         </motion.div>
 
@@ -159,10 +159,10 @@ const PageClient = () => {
             <div className="rounded-xl border border-surface-border bg-surface p-8">
               <h3 className="text-lg font-semibold text-foreground">Email</h3>
               <Link
-                href="mailto:rahullade935@gmail.com"
+                href="mailto:divyanshdubey1108@gmail.com"
                 className="mt-3 block text-sm text-text-muted transition-colors hover:text-violet"
               >
-                rahullade935@gmail.com
+                divyanshdubey1108@gmail.com
               </Link>
             </div>
 
@@ -202,8 +202,8 @@ const PageClient = () => {
                 </span>
               </div>
               <p className="mt-3 text-sm text-text-muted">
-                I&apos;m currently available for freelance projects and full-time
-                opportunities.
+                I&apos;m currently available for internships and entry-level software
+                engineering opportunities.
               </p>
             </div>
           </motion.div>

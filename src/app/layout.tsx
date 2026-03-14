@@ -15,15 +15,15 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Full-Stack Developer",
+  title: "Divyansh Dubey | Full-Stack Developer",
   description:
-    "Personal portfolio showcasing projects, experience, and skills as a full-stack developer. Built with Next.js, TypeScript, and Tailwind CSS.",
-  keywords: ["portfolio", "developer", "full-stack", "next.js", "react"],
-  authors: [{ name: "Developer" }],
+    "Portfolio of Divyansh Dubey, a backend-focused full-stack developer showcasing projects, skills, and engineering work.",
+  keywords: ["Divyansh Dubey", "portfolio", "developer", "full-stack", "backend", "next.js", "node.js"],
+  authors: [{ name: "Divyansh Dubey" }],
   openGraph: {
-    title: "Portfolio | Full-Stack Developer",
+    title: "Divyansh Dubey | Full-Stack Developer",
     description:
-      "Personal portfolio showcasing projects, experience, and skills.",
+      "Projects, skills, and engineering work by Divyansh Dubey.",
     type: "website",
   },
 };

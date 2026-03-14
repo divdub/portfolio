@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { AnimatedText } from '@/components/effects/AnimatedText';
 import { StarfieldCanvas } from '@/components/effects/StarfieldCanvas';
 
-const ROTATING_WORDS = ['Scalable', 'Modern', 'Performant', 'Beautiful'];
+const ROTATING_WORDS = ['Scalable', 'Backend-First', 'Reliable', 'AI-Powered'];
 
 const STAGGER_CHILDREN = {
   hidden: { opacity: 0 },
@@ -49,7 +49,7 @@ const HeroSection = () => {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
           </span>
-          <span className="text-sm text-text-muted">Available for new projects</span>
+          <span className="text-sm text-text-muted">Open to internships and entry-level roles</span>
         </motion.div>
 
         {/* Main Heading */}
@@ -60,9 +60,9 @@ const HeroSection = () => {
             className="pointer-events-none absolute inset-0 select-none text-4xl font-bold leading-tight tracking-tight text-violet blur-2xl sm:text-5xl md:text-7xl"
             style={{ opacity: 0.4 }}
           >
-            Building Modern
+            Building Scalable
             <br />
-            Web Applications
+            Web Systems
           </h1>
           <h1 className="relative text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-7xl">
             Building{' '}
@@ -71,7 +71,7 @@ const HeroSection = () => {
               className="text-violet"
             />{' '}
             <br />
-            Web Applications
+            Web Systems
           </h1>
         </motion.div>
 
@@ -80,8 +80,8 @@ const HeroSection = () => {
           variants={FADE_UP}
           className="max-w-2xl text-lg text-text-muted md:text-xl"
         >
-          Full-Stack Developer crafting elegant, high-performance digital
-          experiences with modern technologies.
+          I&apos;m Divyansh Dubey, a full stack developer with a backend focus,
+          building scalable products using Node.js, React, Next.js, and modern cloud-ready workflows.
         </motion.p>
 
         {/* CTAs — clean, no magnetic effect */}
@@ -101,7 +101,7 @@ const HeroSection = () => {
             className="flex items-center gap-3 rounded-lg border border-surface-border bg-surface/50 px-8 py-3 text-sm font-medium text-foreground backdrop-blur-sm transition-colors duration-200 hover:border-violet/30 hover:text-violet"
           >
             <Download size={16} />
-            Download Resume
+            Contact Me
           </Link>
         </motion.div>
 
