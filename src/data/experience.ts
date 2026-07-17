@@ -1,54 +1,44 @@
-interface IExperience {
+interface ITimelineItem {
     id: string;
-    role: string;
-    company: string;
+    title: string;
+    subtitle: string;
     duration: string;
     description: string;
-    achievements: string[];
-    techStack: string[];
+    highlights: string[];
+    tags: string[];
 }
 
-const EXPERIENCES: IExperience[] = [
+const EXPERIENCES: ITimelineItem[] = [
     {
-        id: 'exp-1',
-        role: 'B.Tech Student, Computer Science & Engineering',
-        company: 'Rungta College of Engineering and Technology, Bhilai',
-        duration: 'Sep 2022 – Jul 2026',
-        description: 'Focused on backend systems, problem solving, and full-stack web development while pursuing CSE.',
-        achievements: [
-            'Maintaining a CGPA of 8.1 in Computer Science and Engineering',
-            'Built multiple production-style projects using Node.js, React, and Next.js',
-            'Continuously learning scalability, cloud concepts, and backend architecture',
+        id: 'exp-vyavastha',
+        title: 'Core Software Developer',
+        subtitle: 'Vyavastha',
+        duration: 'April 2026 – Present',
+        description:
+            'Building an event management marketplace connecting customers with verified vendors while developing the complete product from scratch.',
+        highlights: [
+            'Designed and developed the complete platform architecture',
+            'Built scalable backend APIs using Node.js, Express.js, PostgreSQL and Prisma',
+            'Developed responsive frontend using Next.js, React and Tailwind CSS',
+            'Implemented authentication, booking flow, payments and vendor onboarding',
+            'Deployed production infrastructure on Azure VM with Nginx, PM2 and GitHub Actions CI/CD',
+            'Integrated Razorpay payments, Cloudinary media storage and role-based access control',
+            
         ],
-        techStack: ['C++', 'Java', 'Python', 'DBMS'],
-    },
-    {
-        id: 'exp-2',
-        role: 'Full-Stack Project Builder',
-        company: 'Personal Projects and Open Source',
-        duration: '2024 – Present',
-        description: 'Building end-to-end web products with REST APIs, authentication, database design, and polished UIs.',
-        achievements: [
-            'Developed CourseGen using Gemini API to automate course outline generation',
-            'Built CartForge with complete CRUD workflows for product management',
-            'Created and deployed portfolio projects with modern React and Next.js tooling',
+        tags: [
+            'Next.js',
+            'React',
+            'Node.js',
+            'Express.js',
+            'TypeScript',
+            'PostgreSQL',
+            'Prisma',
+            'Azure',
+            'Docker',
+            'GitHub Actions',
         ],
-        techStack: ['Node.js', 'Express.js', 'Next.js', 'MongoDB'],
-    },
-    {
-        id: 'exp-3',
-        role: 'Competitive Programming and Core CS Practice',
-        company: 'LeetCode and Coding Platforms',
-        duration: 'Ongoing',
-        description: 'Consistent DSA practice with focus on data structures, algorithms, and computer science fundamentals.',
-        achievements: [
-            'Solved 600+ coding problems across platforms',
-            'Reached LeetCode rating 1727 (top 11.28% globally)',
-            'Strengthened CS fundamentals across OOP, OS, DBMS, and Computer Networks',
-        ],
-        techStack: ['DSA', 'OOP', 'OS', 'Computer Networks'],
     },
 ];
 
-export type { IExperience };
+export type { ITimelineItem };
 export { EXPERIENCES };

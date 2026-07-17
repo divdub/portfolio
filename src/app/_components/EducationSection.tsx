@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { TextReveal } from '@/components/effects/TextReveal';
 import { TimelineCard } from '@/components/effects/TimelineCard';
-import { EXPERIENCES } from '@/data/experience';
+import { EDUCATION } from '@/data/education';
 
-const ExperienceTimeline = () => {
+const EducationSection = () => {
   const { ref, isInView } = useScrollAnimation();
 
   return (
-    <section id="experience" className="relative py-20">
+    <section id="education" className="relative py-20">
       <div ref={ref} className="mx-auto max-w-5xl px-5">
         {/* Section Header */}
         <motion.div
@@ -20,25 +20,25 @@ const ExperienceTimeline = () => {
           transition={{ duration: 0.5 }}
           className="mb-10"
         >
-          <span className="text-sm font-medium text-violet">Career</span>
+          <span className="text-sm font-medium text-violet">Academics</span>
           <TextReveal
             as="h2"
             className="mt-3 text-3xl font-bold text-foreground md:text-4xl"
             delay={0.1}
           >
-            Experience
+            Education
           </TextReveal>
         </motion.div>
 
         {/* Compact stacked cards */}
         <div className="flex flex-col gap-5">
-          {EXPERIENCES.map((exp, index) => (
+          {EDUCATION.map((edu, index) => (
             <TimelineCard
-              key={exp.id}
-              item={exp}
+              key={edu.id}
+              item={edu}
               index={index}
               isInView={isInView}
-              glowColor="rgba(139, 92, 246, 0.15)"
+              glowColor="rgba(6, 182, 212, 0.15)"
             />
           ))}
         </div>
@@ -47,4 +47,4 @@ const ExperienceTimeline = () => {
   );
 };
 
-export { ExperienceTimeline };
+export { EducationSection };
